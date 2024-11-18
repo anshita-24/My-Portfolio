@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+       
+    body {
+        background-color: #dbddd4; 
+    }
+        header {
+            background: #8a5c9a;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #254b57;
+        }
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1.5s ease-in-out forwards;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            list-style: square;
+            padding-left: 1.5rem;
+        }
+        .flash-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+        .flash-card {
+            flex: 1 1 calc(45% - 1rem); 
+            background: #ecf7cd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .flash-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .flash-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        .flash-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .flash-card ul li {
+            background: #8a5c9a;
+            color: white;
+            padding: 0.5rem;
+            margin: 0.3rem 0;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            background: #8a5c9a;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .flash-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Code, Design, Create — My Portfolio
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#responsibility">Responsibilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/anshita-shrivastava-73a07929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+               target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/anshita-24" 
+               target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:anshri2407@gmail.com" 
+               title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </header>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        .social-icons {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .social-icons a {
+            margin: 0 0.5rem;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s, transform 0.2s;
+        }
+        .social-icons a:hover {
+            color: #8a5c9a;
+            transform: scale(1.2);
+        }
+    </style>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Anshita Shrivastava, a second-year IT student with a strong focus on front-end development and mastering data structures and algorithms with hands-on experience in coding and problem solving. I have a keen interest in creating intuitive and visually appealing web applications while continuously honing my problem-solving skills. My passion for technology extends to data science, where I aim to derive insights and build impactful solutions. . With a mindset of continuous learning, I am dedicated to leveraging my skills to contribute effectively to your organization and take it to the new heights.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>B-Tech in Information Technology, MITS-DU (GPA: 9.43/10)</li>
+            <li>12th, Sanskar Public School (86%)</li>
+            <li>10th, Carmel Convent Sr. Sec. School (94.4%)</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="flash-cards">
+            <div class="flash-card">
+                <h3>Languages</h3>
+                <ul>
+                    <li>C++</li>
+                    <li> Python(Basic)</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="flash-card">
+                <h3>IT Constructs</h3>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>OOPS</li>
+                </ul>
+            </div>
+            <div class="flash-card">
+                <h3>Version Control</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="flash-card">
+                <h3>Databases</h3>
+                <ul>
+                    <li>MySQL</li>
+                    
+                </ul>
+            </div>
+            <div class="flash-card">
+                <h3>Tools</h3>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Google Colab</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <button class="project-btn" onclick="showDetails('details1')">MY PORTFOLIO</button>
+            <div id="details1" class="project-details">
+                <p>A responsive portfolio to showcase my skills and projects. This website is designed using HTML, CSS, and JavaScript, focusing on a user-friendly interface and responsive design principles.</p>
+                <a href="https://example.com/portfolio" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project">
+            <button class="project-btn" onclick="showDetails('details2')">CROCODILE CHRONICLES</button>
+            <div id="details2" class="project-details">
+                <p>This front-end project offers comprehensive information about crocodiles through multiple interactive pages. It features a habitat map, species details, fun facts, and a quiz to engage users in learning about crocodile conservation and behavior. Built using HTML, CSS, and JavaScript, the project provides an educational and immersive experience for users to explore various aspects of crocodile life.</p>
+                <a href="https://anshita-24.github.io/Crocodile--Chronicles/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+    <style>
+        #projects {
+            text-align: center;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        .project {
+            margin-bottom: 1.5rem;
+        }
+    .project-btn {
+        background: #8a5c9a;
+        color: white;
+        font-size: 1.5rem; 
+        padding: 1rem 2rem; 
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+    .project-btn:hover {
+        background: #8a5c9a;
+        transform: scale(1.5);
+    }
+        .project-details {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            background: #ecf7cd;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .project-details p {
+            margin: 0 0 0.5rem;
+            font-size: 1rem;
+            color: #050505;
+        }
+    
+        .project-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #8a5c9a;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+    
+        .project-link:hover {
+            border-color: #00aaff;
+        }
+    </style>
+    
+    <script>
+        function showDetails(detailId) {
+            const details = document.getElementById(detailId);
+            details.style.display = details.style.display === "block" ? "none" : "block";
+        }
+    </script>
+    
+    
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <ul>
+            <li>
+                <a href="https://1drv.ms/b/c/86459ec272ca96d0/EWuZcaKqwlpLsmHJ0Zp9umkBbuK0G0ucfFE9wC7yhBZiPA?e=peNVZW" target="_blank" rel="noopener noreferrer">
+                    Data Structures and Algorithms
+                </a>
+            </li>
+            <li>
+                <a href="https://1drv.ms/b/c/86459ec272ca96d0/EW9l2lNp9LZFoIaYrfe7IDMBzsDevPL2_TM6YXgMP6ol-Q?e=icZ0Vm" target="_blank" rel="noopener noreferrer">
+                    Data Analyst Fundamentals
+                </a>
+            </li>
+            <li>
+                <a href="https://1drv.ms/b/c/86459ec272ca96d0/EQckYCUUlyFIhwECK0PXNbwB5xeJ_WDQR94RcaISRmnRCg?e=o92HhW" target="_blank" rel="noopener noreferrer">
+                   Myntra HackerRamp
+                </a>
+            </li>
+            <li>
+                <a href="https://unstop.com/certificate-preview/4c88a545-040e-474a-a9c5-e8f6f165f480?utm_campaign=site-emails&utm_medium=d2c-automated&utm_source=wow-look-at-your-certificate-tata-crucible-campus-quiz-2024" target="_blank" rel="noopener noreferrer">
+                    Tata Cruicable Campus Quiz 
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+
+    <section id="responsibility">
+        <h2>Positions of Responsibility</h2>
+        <ul>
+            <li>Core Technical Team Member, AI Club MITS-DU</li>
+            <li>Graphic Designer, IETE Society MITS-DU</li>
+            <li>Department Training and Placement Cell Coordinator, IT Department</li>
+            <li>Class Representative, IT Department</li>
+        </ul>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: anshri2407@gmail.com</p>
+        <p>Phone: 8085396292</p>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting my portfolio!</p>
+        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/anshita-shrivastava-73a07929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> or check out my work on <a href="https://github.com/anshita-24" target="_blank">GitHub</a>.</p>
+        <p>&copy; Copyright 2024 @Anshita Shrivastava. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
